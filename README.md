@@ -380,7 +380,7 @@ In the above diagram, a chunk of neural network, A(representation of the users s
 
 These loops make recurrent neural networks seem kind of mysterious. However, if you think a bit more, it turns out that they aren’t all that different than a normal neural network. A recurrent neural network can be thought of as multiple copies of the same network, each passing a message to a successor. Consider what happens if we unroll the loop:
 
-![RNN-UNRPLLED](https://github.com/EXYNOS-999/luxetics/blob/master/RNN-rolled.png)
+![RNN-UNRPLLED](https://github.com/EXYNOS-999/luxetics/blob/master/RNN-unrolled.png)
 
 
 Thus we can use this architecture, stating with a baseline for a individual and taking as input the analysis/scores from the various tests, and then passing it through the network and updating the user's state in the network.
@@ -402,3 +402,18 @@ More advanced architectured such as LSTM(Long-Short Term memory units) can also 
 
 [Must Watch](https://www.youtube.com/watch?v=JgvyzIkgxF0)
 
+Basic Architecture 
+
+![RL](https://www.kdnuggets.com/images/reinforcement-learning-fig1-700.jpg)
+
+Where,
+
+AGENT== USER 
+  
+ENVIROONMENT== TEST    
+
+ANALYSIS RESULTS == r+1/s+1    CHANGE IN STATE OF THE MODEL FOR PERSONALIZATION  
+ 
+ACTION== CHANGE IN THE COGNITIVE TASKS AND FREQUENCY OF LIGHT 
+
+![RL-II](https://dkasenberg.github.io/assets/img/irl_diagram.png)
