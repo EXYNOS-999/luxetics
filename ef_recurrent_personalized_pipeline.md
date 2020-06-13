@@ -171,8 +171,69 @@ About a second later, within one of the two frames, a white dot appears (i.e., t
 	
 
 
-*Analyze the data of a single subject*
+*Analyze the data of a single subject R Script*
 
+	File: examples/ior/create-feedback.r
+	
+	x = read.table("/dev/shm/data")
+	
+	postscript(file="feedback.ps",width=600,height=480)
+	
+	mins = rep(0,6)
+	maxs = rep(0,6)
+	mns  = rep(0,6)
+	error= rep(0,6)
+	
+	BLOCK   = as.character(x[,1])
+	RT1     = x[,6]
+	
+	blocks  = unique(BLOCK)
+	
+	CORRECT = x[,5] == 1
+	
+	data    = numeric(0)
+	for ( i in 1:length(blocks) )
+	  {
+	    mns[i]  = round(mean(RT1[ CORRECT & BLOCK==blocks[i] ]),digits=1)
+	    mins[i] = round(min(RT1[ CORRECT & BLOCK==blocks[i] ]),digits=1)
+	    maxs[i] = round(max(RT1[ CORRECT & BLOCK==blocks[i] ]),digits=1)
+	    error[i]= round(
+	                sum(CORRECT & BLOCK==blocks[i])/sum(BLOCK==blocks[i])*100,digits=1)
+	  }
+	
+	par(bg="black",fg="yellow",col.main="yellow",col.axis="yellow",col.lab="yellow")
+	plot(0,0,xlim=c(1,6),ylim=c(100,max(maxs)+100),axes=F,
+	     ylab="Reaction time (milliseconds)",xlab="block")
+	
+	title(paste("Times of last block:\n Mean:",mns[length(blocks)],"Slowest:",
+	            maxs[length(blocks)],"Fastest:",mins[length(blocks)],
+	            "\nSuccessrate:",error[length(blocks)],"%"),col="yellow")
+	points(mins[1:length(blocks)],pch=19,col="green")
+	points(maxs[1:length(blocks)],pch=19,col="red")
+	points(mns[1:length(blocks)],pch=19,col="yellow",type="b",lwd=3)
+	
+	for ( i in 1:length(blocks))
+	{
+	  color = "green"
+	  if ( error[i] < 90 ){color="orange"}
+	  if ( error[i] < 80 ){color="red"}
+	  text( i , 100 , error[i],col=color)
+	}
+	
+	labs=c("T",paste(1:5,sep=""))
+	axis(1,at=1:6,labels=labs)
+	axis(2,las=1)
+	
+	dev.off()
+	system("convert -rotate 90 feedback.ps feedback.png")
+	
+	
+	
+
+
+
+
+![VIZ](https://github.com/EXYNOS-999/luxetics/blob/master/ior.png)
 
 
 
@@ -274,14 +335,73 @@ About a second later, within one of the two frames, a white dot appears (i.e., t
 
 
 
-
-
-
-
-
 ## Whats Next/ Possible?
 
 * Program a cognitive psychological experiment  
 * Set up an online questionnaire/survey  
 * Embed experiments in questionnaires/surveys  
 * Run online studies  
+
+
+
+## HYPER-PERSONALIZATION UNIQUE VALUE
+
+Enhancing Cognitive Abilities with PBM 
+
+Your brain learns from feedback. Through live visual feedback of what your brain is doing, you are able to train it to function better - neurofeedback. 
+
+Using sensors on the scalp, we can measure and monitor this activity. With brain analysis software, we can identify what specific activity is giving rise to your symptoms.  
+
+Once we know the areas of concern, we can create a training plan to help draw your brain into a comfortable, efficient state. That brings us to neurofeedback. 
+
+[Q-EEG](https://brainworksneurotherapy.com/qeeg-brain-mapping)
+
+**WE WILL REQUIRE SENSORS TO INGEST INPUT AND TRAIN OUR ML MODEL TO ADAP TO THE SAME.**
+
+During a neurofeedback session, we compare what your brain is actually doing to what you'd like it to be doing. When your brain is nearing a more comfortable state, you are rewarded with a positive response on a computer screen. Usually this ‘neuro-feedback’ is in the form of a video game, music, or movie. In LUXETICS CASE THIS WOULD BE IN THE FORM OF A CHANGE IN THE FREQUENCY OF LIGHT.
+
+
+*Machine Learning Arcitecture*
+
+**RECURRENT NEURAL NETWORKS** 
+
+
+Recurrent Neural Networks
+Humans don’t start their thinking from scratch every second. As you read this essay, you understand each word based on your understanding of previous words. You don’t throw everything away and start thinking from scratch again. Your thoughts have persistence.
+
+Traditional neural networks can’t do this, and it seems like a major shortcoming. For example, imagine you want to classify what kind of event is happening at every point in a movie. It’s unclear how a traditional neural network could use its reasoning about previous events in the film to inform later ones.
+
+Recurrent neural networks address this issue. They are networks with loops in them, allowing information to persist.
+
+
+![RNN](https://github.com/EXYNOS-999/luxetics/blob/master/RNN-rolled.png)
+
+In the above diagram, a chunk of neural network, A(representation of the users state), looks at some input xt and outputs a value ht. A loop allows information to be passed from one step of the network to the next.
+
+These loops make recurrent neural networks seem kind of mysterious. However, if you think a bit more, it turns out that they aren’t all that different than a normal neural network. A recurrent neural network can be thought of as multiple copies of the same network, each passing a message to a successor. Consider what happens if we unroll the loop:
+
+![RNN-UNRPLLED](https://github.com/EXYNOS-999/luxetics/blob/master/RNN-rolled.png)
+
+
+Thus we can use this architecture, stating with a baseline for a individual and taking as input the analysis/scores from the various tests, and then passing it through the network and updating the user's state in the network.
+
+Accordingly, furthur analysis can be done as to what level of difficulty changes and improvement/decine(qualitative) has occured in time t.
+
+More advanced architectured such as LSTM(Long-Short Term memory units) can also be used which can capture long term dependencies(changes) in cognitive function.
+
+
+[LSTM](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+[RNN-memory update](https://distill.pub/2019/memorization-in-rnns/)
+
+
+*Alternate approach*
+
+
+[REINFORCEMENT-LEARNING](https://medium.com/@jonathan_hui/rl-introduction-to-deep-reinforcement-learning-35c25e04c199)
+
+
+[Must Watch]()https://www.youtube.com/watch?v=JgvyzIkgxF0
+
+
+
+references 
