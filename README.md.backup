@@ -414,6 +414,33 @@ ENVIROONMENT== TEST
 
 ANALYSIS RESULTS == r+1/s+1    CHANGE IN STATE OF THE MODEL FOR PERSONALIZATION  
  
-ACTION== CHANGE IN THE COGNITIVE TASKS ACCORDING TO PREVIOUS ANALYSIS 
+ACTION== CHANGE IN THE COGNITIVE TASKS AND FREQUENCY OF LIGHT 
 
 ![RL-II](https://dkasenberg.github.io/assets/img/irl_diagram.png)
+
+## REAL-TIME Cognitive-Analysis |  Brain Training 
+
+## Why?
+
+1. To improve mental well-being, performance & overall health
+2. See and analyse Real-time progress/status of the data(processed) form the sensors.
+3. In-app rewards; redemption towards next subscription ( Discussed: Marco )
+4. Brain-Training process and analysis across different time-frames.
+5. Create a feedback Mechanism(Reinforcement learning) for the brain to learn from periodic release of dopamine.(See also: neurofeedback)
+
+
+
+## Proposed Tech Stack | For gamification process
+
+CHESS    
+[LICHESS API]("https://lichess.org/api") --> Connect to the Users Account    
+Advantages:
+
+- Can supplement with the analysis provided by LiChess as well.   
+
+- Leveraging the Wide-populaity of CHESS.  
+
+
+- [ELO RATING SYSTEM](https://en.wikipedia.org/wiki/Elo_rating_system#:~:text=The%20Elo%20rating%20system%20is,a%20Hungarian-American%20physics%20professor.&text=Two%20players%20with%20equal%20ratings,an%20equal%20number%20of%20wins.) Scientifically proven and standardized use across platforms and a good metric to reward(positive/negative) to both of the users.
+
+- Open-Source no copyright issues(direct integration with the Luxetics )
