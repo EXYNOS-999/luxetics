@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Luxetics</string>
+    <string name="instructions">Instructions</string>
+    <string name="_1_you_will_see_two_different_kinds_of_arrows_in_the_test_which_are_and_there_will_of_5_arrows_at_the_centre_of_the_screen_n2_you_have_swipe_in_the_direction_of_the_middle_element_of_the_display_for_instance_is_the_middle_element_of_swipe_right_n3_the_display_will_disappear_after_1_second_each_4_there_are_30_rounds_of_the_same_so_please_find_a_quiet_place_for_yourself_where_you_can_focus_n5_if_you_want_to_try_out_the_implementation_feel_free_to_do_so_by_clicking_the_trial_button_n6_to_start_the_test_please_swipe_right"><![CDATA[1. You will see two different kinds of arrows in the test which are \'<\' and \'>\'. There will of 5 arrows at the centre of the screen. \n2. You have swipe in the direction of the middle element of the display. For instance, \'>\' is the middle element of <<><<; swipe right. \n3. The display will disappear after 1 second each. 4. There are 30 rounds of the same. So please find a quiet place for yourself where you can focus. \n5. If you want to try out the implementation, feel free to do so by clicking the trial button. \n6. To start the test, please swipe right.]]></string>
+    <string name="trial">Trial</string>
+    <string name="next">next</string>
+</resources>
