@@ -430,7 +430,7 @@ ACTION== CHANGE IN THE COGNITIVE TASKS AND FREQUENCY OF LIGHT
 
 
 
-## Proposed Tech Stack | For gamification process
+## Research on Cognitive Training Games
 
 CHESS    
 [LICHESS API]("https://lichess.org/api") --> Connect to the Users Account    
@@ -444,3 +444,34 @@ Advantages:
 - [ELO RATING SYSTEM](https://en.wikipedia.org/wiki/Elo_rating_system#:~:text=The%20Elo%20rating%20system%20is,a%20Hungarian-American%20physics%20professor.&text=Two%20players%20with%20equal%20ratings,an%20equal%20number%20of%20wins.) Scientifically proven and standardized use across platforms and a good metric to reward(positive/negative) to both of the users.
 
 - Open-Source no copyright issues(direct integration with the Luxetics platform) thus provind a more circular and complete experience. 
+
+
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134467
+
+https://www.lumosity.com/hcp/research/completed 
+
+Note: We want to build on pudlished and proven work not random games and training 
+
+https://www.lumosity.com/en/science/
+
+https://blogs.scientificamerican.com/talking-back/best-evidence-for-brain-training-falls-short/
+
+https://well.blogs.nytimes.com/2014/03/10/do-brain-workouts-work-science-isnt-sure/?_php=true&_type=blogs&_r=0
+
+https://pubmed.ncbi.nlm.nih.gov/22708717/
+
+Negative studies: can be usde to market and we can actualy show some metric of progres using our service where other traditional apps fall short.
+
+https://www.cam.ac.uk/research/news/brain-training-app-may-improve-memory-and-daily-functioning-in-schizophrenia
+
+Q: Better to target patients with specific disorders w/ games and cognitive tasks that have shown to make an improvement(backed by scientific studies)
+
+Note: Lifestyle changes and reinforcemnt and rewards to do real-world tasks are better to implement and have shown +ve results 
+
+https://www.labroots.com/trending/neuroscience/17249/brain-training-games-work
+
+
+Some COGNITIVE GAMES WE CAN CONSIDER:
+
+
+Discuss do we wanna go this route?
