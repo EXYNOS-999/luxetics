@@ -51,9 +51,11 @@ In this task, you need to respond with the A or L key of your keyboard. This mat
 
 *Details* 
 
-5 letters appear above the fixation point, but you must only respond to the central letter (which is above the fixation point). The letters X and C need to be responded to with the A button of your keyboard. The letters V and B need to be responded to with the L button of your keyboard. If there is a mismatch between the flanking letters their response and the response required by the central letter, we speak of a "incongruent" or "incompatible" condition.
+*5 letters appear above the fixation point, but you must only respond to the central letter (which is above the fixation point). The letters X and C need to be responded to with the A button of your keyboard. The letters V and B need to be responded to with the L button of your keyboard. If there is a mismatch between the flanking letters their response and the response required by the central letter, we speak of a "incongruent" or "incompatible" condition.
+The flanker task, also known as the Eriksen flanker task, was designed in the early 1970s by Eriksen and Eriksen. Like most of the paradigms in this library, it is popular and there are many variants of the original.
 
-
+The basic effect is that when you need to respond to stimuli "flanked" by irrelevant stimuli, the irrelevant stimuli can still affect your response. There is a similarity between other paradigms in which this type of interference from an irrelevant stimulus or stimulus feature occurs (like the Stroop task or the Simon task).
+*
 
 
 
@@ -71,7 +73,25 @@ Output format:
 4             |	the response time (ms)
 
 
+**STROOP TEST
+**
 
+*The Stroop Task is one of the best known psychological experiments named after John Ridley Stroop. The Stroop phenomenon demonstrates that it is difficult to name the ink color of a color word if there is a mismatch between ink color and word. For example, the word GREEN printed in red ink. The wikipedia web site gives a good description of the effect.
+
+Colin MacLeod’s (1991) review article in the influential psychological journal Psychological Bulletin is frequently cited when discussing the effect.
+
+There are many variations on the basic effect using other stimuli than colored words.
+
+It is easier to measure key presses than the time it takes to name a task; therefore, there are "manual" Stroop tasks in which you need to press colored keys.*
+
+
+
+**SIMON TEST**
+
+
+*The Simon task and the Simon effect are named after J. R. Simon. Together with his colleague, he first described this effect in 1963. In essence, it shows that people respond faster and more accurately if there is a match between stimulus and response features (e.g., location, when for example stimulus and response are both located on the left side of one’s body).
+
+The effect is also known as a stimulus-response compatibility effect. There are many variants of the stimulus-response compatibility available. Like the Stroop effect, it is easy to notice consciously how difficult a mismatch between a stimulus and response can be.*
 
 ## DATA ANALYSIS 
 
@@ -473,5 +493,24 @@ https://www.labroots.com/trending/neuroscience/17249/brain-training-games-work
 
 Some COGNITIVE GAMES WE CAN CONSIDER:
 
-
 Discuss do we wanna go this route?
+COMMENTS: Use cognitive games for the virtual reward system and not explicitly for the coginitve ability development claims, don't make claims during marketing about the effectiveness of these games.
+
+Scale down to 3(three) cognitive tests
+
+Research: How people make virtual currency reinforcement in applications such as fitness training. How to target elderly(who is currently doing this?Progress?)
+
+The connection of the 3 parts. 
+
+-  Cognitive tests, Data, Analysis
+- Fitness tracker(biosensors) to track their heart pulse etc, using Cogni while doing activities, takes off the worry of putting something foreign on their head(do market research)
+- Sync with sleep patterns many smartwatches already do this so directly integrate.
+- Conect data insights to recommend changes in physical lifestyle changes and show benefits over time.
+
+
+NEEDS IMMEDIATE ATTENTION
+1. Focus toward moving development towads a [PWA-Progressive Web App](https://web.dev/progressive-web-apps/)
+2. Design workflows
+3. Toolkit under consideration https://www.psychstudio.com
+4. Get into Lumosity Human Cognition Project or similar reseach  under a professor/lab as an advisor for future development.
+5. Update landing page with basic information and VISION, Team and other important details to increase outreach.

@@ -1,0 +1,1 @@
+Example of the Simon task with arrow bitmaps
